@@ -68,7 +68,7 @@ Een veelgebruikte manier daarvoor is het opnemen van een stukje template in het 
 Het template wordt niet door de browser getoond, maar het stuk html in het template kan in Javascript worden gekopieerd (gecloned) en aangepast.
 Dit wordt bijvoorbeeld gebruikt bij het tonen van artikelen in de shop.
 
-# Howto 
+# How To 
 
 ## Wijzigingen aanbrengen in de database
 Wijzig de sql-commando's in het bestand db/my.sql<br>
