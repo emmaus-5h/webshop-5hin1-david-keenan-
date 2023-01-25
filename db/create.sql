@@ -10,6 +10,7 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
+CREATE TABLE commando ();
 
 --
 -- populate with data
