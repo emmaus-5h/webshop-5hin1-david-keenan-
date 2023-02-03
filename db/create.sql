@@ -29,3 +29,5 @@ insert into products (name, description, code, price) values ('Sasuke Mangekyo S
 insert into products (name, description, code, price) values ('Goku Kaioken x20', 'Kaioken makes the body strong, but gives you a big toll on your life', '492662523-7', 20);
 insert into products (name, description, code, price) values ('Gojo Sensei', 'With his Six-Eyes he lets u feel his emptiness, The Void', '8169475833-0', 200.0);
 insert into products (name, description, code, price) values ('Beast Gohan', 'Okay then, guess its my turn!', '5366695833-0', 16.0);
+insert into products (name, description, code, price) values ('Hollow Demon Ichigo', 'HRAAAAAAAGGGHHHH', '334935833-0', 666.0);
+insert into products (name, description, code, price) values ('The Lion Sin of Pride Escanor', 'Escanor is considered the single strongest true human, as well as one of the strongest characters.', '312935833-0', 312.0);
