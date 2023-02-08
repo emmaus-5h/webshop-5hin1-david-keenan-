@@ -4,9 +4,9 @@
 
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  code VARCHAR(15),
   name VARCHAR(255),
   description TEXT,
+  code VARCHAR(15),
   price NUMERIC(10, 2)
 );
 
@@ -32,12 +32,36 @@ insert into products (name, description, code, price) values ('Beast Gohan', 'Ok
 insert into products (name, description, code, price) values ('Hollow Demon Ichigo', 'HRAAAAAAAGGGHHHH', '334935833-0', 666.0);
 insert into products (name, description, code, price) values ('The Lion Sin of Pride Escanor', 'Escanor is considered the single strongest true human, as well as one of the strongest characters.', '312935833-0', 312.0);
 
-CREATE TABLE reviews (
+CREATE TABLE aanbiedingen (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  code VARCHAR(15),
   name VARCHAR(255),
   description TEXT,
+  code VARCHAR(15),
   price NUMERIC(10, 2)
+);
+
+insert into aanbiedingen values ('2 euro');
+insert into aanbiedingen values ('300 euro');
+insert into aanbiedingen values ('100 euro');
+
+CREATE TABLE magazijn (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(255),
+  description TEXT,
+  code VARCHAR(15),
+  price NUMERIC(10, 2)
+);
+
+insert into magazijn (voorraad) values ('op voorraad');
+insert into magazijn (voorraad) values ('uitverkocht');
+insert into magazijn (voorraad) values ('binnenkort verkrijgbaar');
+insert into magazijn (voorraad) values ('laatste deals');
+
+
+CREATE TABLE reviews (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(255),
+  description TEXT
 );
 
 insert into reviews values ('1 ⭐ webshop poep');
@@ -46,17 +70,10 @@ insert into reviews values ('3 ⭐ webshop prima');
 insert into reviews values ('4 ⭐ webshop best goed');
 insert into reviews values ('5 ⭐ webshop perfect');
 
-insert into levertijd (levering) values ('1 week');
-insert into levertijd (levering) values ('2 dagen');
-insert into levertijd (levering) values ('1 dag');
-insert into levertijd (levering) values ('4 uur');
-insert into levertijd (levering) values ('12 uur');
+CREATE TABLE magazijn (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(255),
+  description TEXT
+);
 
-insert into opslag (voorraad) values ('Op voorraad');
-insert into opslag (voorraad) values ('Uitverkocht');
-insert into opslag (voorraad) values ('Binnenkort');
-insert into opslag (voorraad) values ('Laatste items');
-
-insert into allergie (name) values ('Geen');
-insert into allergie (name) values ('Melk');
-insert into allergie (name) values ('Noten');
+insert into contact ons values ('Zo kan je ons contacten');
