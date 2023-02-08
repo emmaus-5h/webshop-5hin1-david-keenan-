@@ -39,3 +39,24 @@ CREATE TABLE reviews (
   description TEXT,
   price NUMERIC(10, 2)
 );
+
+insert into reviews values ('1 ⭐ webshop poep');
+insert into reviews values ('2 ⭐ webshop slecht');
+insert into reviews values ('3 ⭐ webshop prima');
+insert into reviews values ('4 ⭐ webshop best goed');
+insert into reviews values ('5 ⭐ webshop perfect');
+
+insert into levertijd (levering) values ('1 week');
+insert into levertijd (levering) values ('2 dagen');
+insert into levertijd (levering) values ('1 dag');
+insert into levertijd (levering) values ('4 uur');
+insert into levertijd (levering) values ('12 uur');
+
+insert into opslag (voorraad) values ('Op voorraad');
+insert into opslag (voorraad) values ('Uitverkocht');
+insert into opslag (voorraad) values ('Binnenkort');
+insert into opslag (voorraad) values ('Laatste items');
+
+insert into allergie (name) values ('Geen');
+insert into allergie (name) values ('Melk');
+insert into allergie (name) values ('Noten');
