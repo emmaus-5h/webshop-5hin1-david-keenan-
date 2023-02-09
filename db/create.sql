@@ -82,4 +82,4 @@ CREATE TABLE contact ons (
   description TEXT
 );
 
-insert into contact ons values ('Zo kan je ons contacten');
+insert into contact ons values ('Wij zijn de eigenaars van deze website, onze namen zijn Keenan en David.', 'Met deze email (amaterasu10@gmail.com) kan je contact met ons opnemen en anime spullen bestellen voor je eignen persoonlijke collectie. Onze telefoonnummers zijn: +31 6 438923847 en +31 6 27283490, als je ooit met ons wilt bellen om bestelling te bevestigen kan dat.');
