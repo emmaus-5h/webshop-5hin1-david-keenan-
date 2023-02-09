@@ -22,14 +22,14 @@ CREATE TABLE commando ();
 --
 
 insert into products (name, description, code, price) values ('Attack on Titan', 'Fighting with titans, for the freedom of Paradis', '816905633-0', 20.0);
-insert into products (name, description, code, price) values ('Captain Levi figure', 'Master of the way of the sword and is a titan killing God', '077030122-3', 40.0);
-insert into products (name, description, code, price) values ('Kakashi Sensei', 'LIGHTNING BLADE!!!!!!!', '075729122-x', 9999.0);
-insert into products (name, description, code, price) values ('THE One Piece', 'THE ONE PIECE IS REAL!!!! After 1043 episodes', '693155505-7', 10.0);
-insert into products (name, description, code, price) values ('Sasuke Mangekyo Sharingan', 'Sasuke uses his blood eyes to decimate his opponents', '686928463-6', 30.0);
-insert into products (name, description, code, price) values ('Goku Kaioken x20', 'Kaioken makes the body strong, but gives you a big toll on your life', '492662523-7', 20.0);
-insert into products (name, description, code, price) values ('Gojo Sensei', 'With his Six-Eyes he lets u feel his emptiness, The Void', '8169475833-0', 200.0);
 insert into products (name, description, code, price) values ('Beast Gohan', 'Okay then, guess its my turn!', '5366695833-0', 16.0);
+insert into products (name, description, code, price) values ('Captain Levi figure', 'Master of the way of the sword and is a titan killing God', '077030122-3', 40.0);
+insert into products (name, description, code, price) values ('Gojo Sensei', 'With his Six-Eyes he lets u feel his emptiness, The Void', '8169475833-0', 200.0);
+insert into products (name, description, code, price) values ('Goku Kaioken x20', 'Kaioken makes the body strong, but gives you a big toll on your life', '492662523-7', 20.0);
 insert into products (name, description, code, price) values ('Hollow Demon Ichigo', 'HRAAAAAAAGGGHHHH', '334935833-0', 666.0);
+insert into products (name, description, code, price) values ('Kakashi Sensei', 'LIGHTNING BLADE!!!!!!!', '075729122-x', 9999.0);
+insert into products (name, description, code, price) values ('Sasuke Mangekyo Sharingan', 'Sasuke uses his blood eyes to decimate his opponents', '686928463-6', 30.0);
+insert into products (name, description, code, price) values ('THE One Piece', 'THE ONE PIECE IS REAL!!!! After 1043 episodes', '693155505-7', 10.0);
 insert into products (name, description, code, price) values ('The Lion Sin of Pride Escanor', 'Escanor is considered the single strongest true human, as well as one of the strongest characters.', '312935833-0', 312.0);
 
 CREATE TABLE aanbiedingen (
@@ -52,10 +52,10 @@ CREATE TABLE magazijn (
   price NUMERIC(10, 2)
 );
 
-insert into magazijn (voorraad) values ('op voorraad');
-insert into magazijn (voorraad) values ('uitverkocht');
-insert into magazijn (voorraad) values ('binnenkort verkrijgbaar');
-insert into magazijn (voorraad) values ('laatste deals');
+insert into magazijn (voorraad) values ('Attack on Titan', 'op voorraad', '816905633-0', 20.0);
+insert into magazijn (voorraad) values ('Captain Levi figure', 'uitverkocht', '077030122-3', 40.0);
+insert into magazijn (voorraad) values ('Kakashi Sensei', 'binnenkort verkrijgbaar', '075729122-x', 9999.0);
+insert into magazijn (voorraad) values (('THE One Piece', 'laatste deals', '693155505-7', 10.0);
 
 
 CREATE TABLE reviews (
