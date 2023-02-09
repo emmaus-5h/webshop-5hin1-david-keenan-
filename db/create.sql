@@ -40,8 +40,8 @@ CREATE TABLE aanbiedingen (
   price NUMERIC(10, 2)
 );
 
-insert into aanbiedingen values ('Kakashi Sensei', 'Today Kakashi Sensei is generous, he wants you to buy him now for 300 euros, buy him fast before he changes his mind.', '075729122-x', 300.0);
-insert into aanbiedingen (name, description, code, price) values ('Sasuke uses his blood eyes to give you a discount, now for a limited time get Sasukes mangekyo Sharingan for the price of 2.', '686928463-6', 2.0);
+insert into aanbiedingen values ('Kakashi Sensei', 'Today Kakashi Sensei is feeling generous, he wants you to buy him now for 300 euros, buy him fast before he changes his mind.', '075729122-x', 300.0);
+insert into aanbiedingen values ('Sasuke uses his blood eyes to give you a discount, now for a limited time get Sasukes mangekyo Sharingan for the price of 2.', '686928463-6', 2.0);
 insert into aanbiedingen values ('The Lion Sin of Pride Escanor', 'Today is the birthday of Escanors beloved Merlin, for this reason he is willingy to make the price for himself scale down to 100 euros, buty him before Merlins birthday is over.', '312935833-0', 100.0);
 
 CREATE TABLE magazijn (
@@ -53,9 +53,15 @@ CREATE TABLE magazijn (
 );
 
 insert into magazijn (voorraad) values ('Attack on Titan', 'op voorraad', '816905633-0', 20.0);
+insert into magazijn (voorraad) values ('Beast Gohan', 'uitverkocht', '5366695833-0', 16.0);
 insert into magazijn (voorraad) values ('Captain Levi figure', 'uitverkocht', '077030122-3', 40.0);
+insert into magazijn (voorraad) values ('Gojo Sensei', 'binnenkort verkrijgbaar', '8169475833-0', 200.0);
+insert into magazijn (voorraad) values ('Goku Kaioken x20', 'op voorraad', '492662523-7', 20.0);
+insert into magazijn (voorraad) values ('Hollow Demon Ichigo', 'uitverkocht', '334935833-0', 666.0);
 insert into magazijn (voorraad) values ('Kakashi Sensei', 'binnenkort verkrijgbaar', '075729122-x', 9999.0);
-insert into magazijn (voorraad) values (('THE One Piece', 'laatste deals', '693155505-7', 10.0);
+insert into magazijn (voorraad) values ('Sasuke Mangekyo Sharingan', 'laatste deals', '686928463-6', 30.0);
+insert into magazijn (voorraad) values ('THE One Piece', 'laatste deals', '693155505-7', 10.0);
+insert into magazijn (voorraad) values ('The Lion Sin of Pride Escanor', 'uitverkocht', '312935833-0', 312.0);
 
 
 CREATE TABLE reviews (
@@ -70,7 +76,7 @@ insert into reviews values ('3 ⭐ webshop prima');
 insert into reviews values ('4 ⭐ webshop best goed');
 insert into reviews values ('5 ⭐ webshop perfect');
 
-CREATE TABLE magazijn (
+CREATE TABLE contact ons (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR(255),
   description TEXT
