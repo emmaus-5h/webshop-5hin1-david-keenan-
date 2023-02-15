@@ -101,7 +101,7 @@ CREATE TABLE reviews (
   description TEXT
 );
 
-insert into reviews (persons_id, ratings_id, description) values (1, 1, 'I ONCE  TRIED TO BUY ANIME PRODUCTS FOR MY DOG ON THI WEBSITE, NOW MY DOG RAN AWAY AND HE WILL LIKELY NEVER COMEBACK.');
+insert into reviews (persons_id, ratings_id, description) values (1, 1, 'I ONCE TRIED TO BUY ANIME PRODUCTS FOR MY DOG ON THIS WEBSITE, NOW MY DOG RAN AWAY AND HE WILL LIKELY NEVER COMEBACK.');
 insert into reviews (persons_id, ratings_id, description) values (15, 3, 'THIS WEBSITE RLLY MAKES ME WANNA RAGE SOOOOOOO MUCH.');
 insert into reviews (persons_id, ratings_id, description) values (7, 5, 'This website is perfect and cute just like me.');
 insert into reviews (persons_id, ratings_id, description) values (17, 5, 'blie-boop-bli-perfe-blo-rirrree.');
@@ -110,3 +110,11 @@ insert into reviews (persons_id, ratings_id, description) values (11, 1, 'THIS W
 insert into reviews (persons_id, ratings_id, description) values (3, 4, 'This shop is so good, im sobbing like when Jiraiya died.');
 insert into reviews (persons_id, ratings_id, description) values (6, 3, 'KAchowoowww.');
 insert into reviews (persons_id, ratings_id, description) values (9, 5, 'Shop has a lovely aesthetic, like me.');
+insert into reviews (persons_id, ratings_id, description) values (4, 4, 'I would give this website 5 stars if Sonic had a anime.');
+insert into reviews (persons_id, ratings_id, description) values (5, 5, 'God dang, I can see that the developers put a lot of effort into this website.');
+insert into reviews (persons_id, ratings_id, description) values (8, 5, 'Gotta support my sunbae.');
+insert into reviews (persons_id, ratings_id, description) values (10, 5, 'This website is sharp as my 40 degree nose.');
+insert into reviews (persons_id, ratings_id, description) values (12, 2, 'I hate this shop it makes me sad and there are too many options.');
+insert into reviews (persons_id, ratings_id, description) values (14, 2, 'Not as good as Fortnite.');
+insert into reviews (persons_id, ratings_id, description) values (16, 1, 'I dont like humans.');
+insert into reviews (persons_id, ratings_id, description) values (13, 4, 'I would teleport Sasuke out of this prison.');
