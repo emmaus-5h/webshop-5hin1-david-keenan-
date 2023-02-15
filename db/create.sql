@@ -60,21 +60,53 @@ insert into magazijn (name, description, code, price) values ('THE One Piece', '
 insert into magazijn (name, description, code, price) values ('The Lion Sin of Pride Escanor', 'uitverkocht', '312935833-0', 312.0);
 
 
+CREATE TABLE ratings (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  description TEXT
+);
+
+insert into ratings (description) values ('1 ⭐ webshop poep');
+insert into ratings (description) values ('2 ⭐ webshop slecht');
+insert into ratings (description) values ('3 ⭐ webshop prima');
+insert into ratings (description) values ('4 ⭐ webshop best goed');
+insert into ratinfs (description) values ('5 ⭐ webshop perfect');
+
+CREATE TABLE persons (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name VARCHAR(255)
+);
+
+insert into persons (name) values ('Karen');
+insert into persons (name) values ('Sasukefanboy');
+insert into persons (name) values ('Sageloverboii');
+insert into persons (name) values ('WhydoesSonicnothavanime');
+insert into persons (name) values ('Respectforprogramming');
+insert into persons (name) values ('Iamonemanshow');
+insert into persons (name) values ('IsXiaotingPerfect');
+insert into persons (name) values ('Ryujinlover');
+insert into persons (name) values ('Minnieisadorable');
+insert into persons (name) values ('Miyeonetherealbeauty');
+insert into persons (name) values ('MaleversionKarenisDarren');
+insert into persons (name) values ('Whydoiamnothappy');
+insert into persons (name) values ('Minatoisaluckyman');
+insert into persons (name) values ('Gamer34fun');
+insert into persons (name) values ('Ssjrageisbest');
+insert into persons (name) values ('Igoandhateonpeople');
+insert into persons (name) values ('Yackeriscute');
+
 CREATE TABLE reviews (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name VARCHAR(255),
+  persons_id INTEGER,
+  ratings_id INTEGER,
   description TEXT
 );
 
-insert into reviews (name, description) values ('kaas', '1 ⭐ webshop poep');
-insert into reviews (name, description) values ('ham', '2 ⭐ webshop slecht');
-insert into reviews (name, description) values ('salami', '3 ⭐ webshop prima');
-insert into reviews (name, description) values ('drop', '4 ⭐ webshop best goed');
-insert into reviews (name, description) values ('ikhaat', '5 ⭐ webshop perfect');
-
-CREATE TABLE contact (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  description TEXT
-);
-
-insert into contact (description) values ('Wij zijn de eigenaars van deze website, onze namen zijn Keenan en David. Met deze email (amaterasu10@gmail.com) kan je contact met ons opnemen en anime spullen bestellen voor je eignen persoonlijke collectie. Onze telefoonnummers zijn: +31 6 438923847 en +31 6 27283490, als je ooit met ons wilt bellen om bestelling te bevestigen kan dat.');
+insert into reviews (persons_id, ratings_id, description) values (1, 1, 'I ONCE  TRIED TO BUY ANIME PRODUCTS FOR MY DOG ON THI WEBSITE, NOW MY DOG RAN AWAY AND HE WILL LIKELY NEVER COMEBACK.');
+insert into reviews (persons_id, ratings_id, description) values (15, 3, 'THIS WEBSITE RLLY MAKES ME WANNA RAGE SOOOOOOO MUCH.');
+insert into reviews (persons_id, ratings_id, description) values (7, 5, 'This website is perfect and cute just like me.');
+insert into reviews (persons_id, ratings_id, description) values (17, 5, 'blie-boop-bli-perfe-blo-rirrree.');
+insert into reviews (persons_id, ratings_id, description) values (2, 4, 'This website has mine favorite Sasuke, i like it very much =).');
+insert into reviews (persons_id, ratings_id, description) values (11, 1, 'THIS WEBSITE IS BUTT, MINE KAREN WIFE IS THE BEST.');
+insert into reviews (persons_id, ratings_id, description) values (3, 4, 'This shop is so good, im sobbing like when Jiraiya died.');
+insert into reviews (persons_id, ratings_id, description) values (6, 3, 'KAchowoowww.');
+insert into reviews (persons_id, ratings_id, description) values (9, 5, 'Shop has a lovely aesthetic, like me.');
