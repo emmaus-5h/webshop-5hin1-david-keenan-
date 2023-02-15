@@ -1,14 +1,13 @@
 --
 -- create tables
 --
-
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR(255),
   description TEXT,
   code VARCHAR(15),
   price NUMERIC(10, 2)
-);
+  );
 --
 -- populate with data
 --
@@ -38,7 +37,7 @@ CREATE TABLE aanbiedingen (
 );
 
 insert into aanbiedingen (name, description, code, price) values ('Kakashi Sensei', 'Today Kakashi Sensei is feeling generous, he wants you to buy him now for 300 euros, buy him fast before he changes his mind.', '075729122-x', 300.0);
-insert into aanbiedingen (name, description, code, price) values ('Sasuke uses his blood eyes to give you a discount, now for a limited time get Sasukes mangekyo Sharingan for the price of 2.', '686928463-6', 2.0);
+insert into aanbiedingen (name, description, code, price) values ('Sasuke Mangekyo Sharingan','Sasuke uses his blood eyes to give you a discount, now for a limited time get Sasukes mangekyo Sharingan for the price of 2.', '686928463-6', 2.0);
 insert into aanbiedingen (name, description, code, price) values ('The Lion Sin of Pride Escanor', 'Today is the birthday of Escanors beloved Merlin, for this reason he is willingy to make the price for himself scale down to 100 euros, buty him before Merlins birthday is over.', '312935833-0', 100.0);
 
 CREATE TABLE magazijn (
@@ -67,15 +66,15 @@ CREATE TABLE reviews (
   description TEXT
 );
 
-insert into reviews (name, description) values ('1 ⭐ webshop poep');
-insert into reviews (name, description) values ('2 ⭐ webshop slecht');
-insert into reviews (name, description) values ('3 ⭐ webshop prima');
-insert into reviews (name, description) values ('4 ⭐ webshop best goed');
-insert into reviews (name, description) values ('5 ⭐ webshop perfect');
+insert into reviews (name, description) values ('kaas', '1 ⭐ webshop poep');
+insert into reviews (name, description) values ('ham', '2 ⭐ webshop slecht');
+insert into reviews (name, description) values ('salami', '3 ⭐ webshop prima');
+insert into reviews (name, description) values ('drop', '4 ⭐ webshop best goed');
+insert into reviews (name, description) values ('ikhaat', '5 ⭐ webshop perfect');
 
 CREATE TABLE contact (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   description TEXT
 );
 
-insert into contact ons (description) values ('Wij zijn de eigenaars van deze website, onze namen zijn Keenan en David.', 'Met deze email (amaterasu10@gmail.com) kan je contact met ons opnemen en anime spullen bestellen voor je eignen persoonlijke collectie. Onze telefoonnummers zijn: +31 6 438923847 en +31 6 27283490, als je ooit met ons wilt bellen om bestelling te bevestigen kan dat.');
+insert into contact (description) values ('Wij zijn de eigenaars van deze website, onze namen zijn Keenan en David. Met deze email (amaterasu10@gmail.com) kan je contact met ons opnemen en anime spullen bestellen voor je eignen persoonlijke collectie. Onze telefoonnummers zijn: +31 6 438923847 en +31 6 27283490, als je ooit met ons wilt bellen om bestelling te bevestigen kan dat.');
