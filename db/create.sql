@@ -69,7 +69,7 @@ insert into ratings (description) values ('1 ⭐ webshop poep');
 insert into ratings (description) values ('2 ⭐ webshop slecht');
 insert into ratings (description) values ('3 ⭐ webshop prima');
 insert into ratings (description) values ('4 ⭐ webshop best goed');
-insert into ratinfs (description) values ('5 ⭐ webshop perfect');
+insert into ratings (description) values ('5 ⭐ webshop perfect');
 
 CREATE TABLE persons (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
