@@ -30,7 +30,6 @@ app.get('/api/categories', getCategories)
 app.get('/api/products', getProducts)
 app.get('/api/products/:id', getProductById)
 app.get('/api/aanbiedingen', getAanbiedingen)
-app.get('/api/aanbiedingen/:id', getAanbiedingenById)
 //app.get('/api/products/:id/related', db.getRelatedProductsById)
 // our API is not protected...so let's not expose these
 // app.post('/api/products', createProduct)
@@ -86,24 +85,10 @@ function getProductById(request, response) {
 }
 
 function getAanbiedingen(request, response) {
-  console.log('API ontvangt /api/aanbiedingen/', request.query)
-  let data = []
-  const sqlOpdracht = db.prepare('SELECT aanbiedingen.id AS id, aanbiedingen.name AS name, aanbiedingen.description AS description, aanbiedingen.code AS code, aanbiedingen.price AS price FROM aanbiedingen ORDER BY name ASC')
-  data = sqlOpdracht.all()
-  // console.log
-  response.status(200).send(data)
-  console.log('API verstuurt /api/aanbiedingen/')
+  console.log('API ontvangt /api/aanbiedingen/')
+  // TODO: breid database uit zodat onderstaande query een lijstje categoriën levert.
+  const sqlOpdracht = db.prepare('SELECT aanbiedingen.id AS id, aanbiedingen.name AS name, aanbiedingen.description AS description, aanbiedingen.code AS code, aanbieding.price AS price FROM aanbiedingen ORDER BY name ASC')
 }
-
-function getAanbiedingenById(request, response) {
-  console.log('API ontvangt /api/aanbiedingen/:id', request.query)
-  let data = []
-  const aanbiedingen_id = parseInt(request.params.id)
-  const sqlOpdracht = db.prepare('SELECT aanbiedingen.id AS id, aanbiedingen.name AS name, aanbiedingen.description AS description, aanbiedingen.code AS code, aanbiedingen.price AS price FROM aanbiedingen WHERE id = ?')
-  data = sqlOpdracht.all(aanbiedingen_id)
-  response.status(200).json(data[1])
-}
-
 
 
 /*

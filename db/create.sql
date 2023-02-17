@@ -113,7 +113,7 @@ insert into reviews (persons_id, ratings_id, description) values (9, 5, 'Shop ha
 insert into reviews (persons_id, ratings_id, description) values (4, 4, 'I would give this website 5 stars if Sonic had a anime.');
 insert into reviews (persons_id, ratings_id, description) values (5, 5, 'God dang, I can see that the developers put a lot of effort into this website.');
 insert into reviews (persons_id, ratings_id, description) values (8, 5, 'Gotta support my sunbae.');
-insert into reviews (persons_id, ratings_id, description) values (10, 5, 'This website is sharp as my 40 degree nose.');
+insert into reviews (persons_id, ratings_id, description) values (10, 5, 'This website is as sharp as my 40 degree nose.');
 insert into reviews (persons_id, ratings_id, description) values (12, 2, 'I hate this shop it makes me sad and there are too many options.');
 insert into reviews (persons_id, ratings_id, description) values (14, 2, 'Not as good as Fortnite.');
 insert into reviews (persons_id, ratings_id, description) values (16, 1, 'I dont like humans.');
