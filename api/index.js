@@ -30,6 +30,8 @@ app.get('/api/categories', getCategories)
 app.get('/api/products', getProducts)
 app.get('/api/products/:id', getProductById)
 app.get('/api/aanbiedingen', getAanbiedingen)
+app.get('/api/magazijn', getMagazijn)
+app.get('/api/reviews', getReviews)
 //app.get('/api/products/:id/related', db.getRelatedProductsById)
 // our API is not protected...so let's not expose these
 // app.post('/api/products', createProduct)
@@ -89,6 +91,20 @@ function getAanbiedingen(request, response) {
   // TODO: breid database uit zodat onderstaande query een lijstje categoriën levert.
   const sqlOpdracht = db.prepare('SELECT aanbiedingen.id AS id, aanbiedingen.name AS name, aanbiedingen.description AS description, aanbiedingen.code AS code, aanbieding.price AS price FROM aanbiedingen ORDER BY name ASC')
 }
+
+function getMagazijn(request, response) {
+  console.log('API ontvangt /api/magazijn/')
+  // TODO: breid database uit zodat onderstaande query een lijstje categoriën levert.
+  const sqlOpdracht = db.prepare('SELECT magazijn.id AS id, magazijn.name AS name, magazijn.description AS description, magazijn.code AS code, magazijn.price AS price FROM magazijn ORDER BY name ASC')
+}
+
+function getReviews(request, response) {
+  console.log('API ontvangt /api/reviews/')
+  // TODO: breid database uit zodat onderstaande query een lijstje categoriën levert.
+  const sqlOpdracht = db.prepare('SELECT reviews.id AS id, persons_id AS id, ratings_id AS rating, products.name FROM reviews JOIN products ON reviews.products_id = persons_id JOIN name ON reviews.persons_id = persons.id ORDER BY name ASC')
+}
+
+
 
 
 /*
